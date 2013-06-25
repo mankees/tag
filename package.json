@@ -1,0 +1,11 @@
+{
+    "name": "mankees-tag",
+    "private": true,
+    "description": "A tagging mankee",
+    "author": "Juho Vepsalainen <bebraw@gmail.com>",
+    "version": "0.1.0",
+
+    "dependencies": {
+        "git-wrapper": "0.1.1"
+    }
+}
