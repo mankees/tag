@@ -13,7 +13,7 @@ exports.execute = function(version, message) {
     if(!version) {
         return console.error('No version provided!');
     }
-    if(!!parseFloat(version)) {
+    if(!parseFloat(version)) {
         return console.error('Invalid version! Expected a numeric entry.');
     }
 
