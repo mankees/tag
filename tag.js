@@ -10,7 +10,12 @@ var Git = require('git-wrapper');
 exports.execute = function(version, message) {
     message = message || 'Bump version';
 
-    if(!version) return console.error('No version provided!');
+    if(!version) {
+        return console.error('No version provided!');
+    }
+    if(!!parseFloat(version)) {
+        return console.error('Invalid version! Expected a numeric entry.');
+    }
 
     bumpVersion(version);
 
