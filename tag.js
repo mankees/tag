@@ -17,7 +17,7 @@ exports.execute = function(version, message) {
         return console.error('Invalid version! Expected a numeric entry.');
     }
 
-    console.log('Creating a tag with version: ', version);
+    console.log('Creating a tag with version:', version);
 
     bumpVersion(version);
 
