@@ -7,6 +7,7 @@ var exec = require('child_process').exec;
 var Git = require('git-wrapper');
 
 
+exports.help = 'Tags and updates your package.json. Pass version as a parameter'
 exports.execute = function(version, message) {
     message = message || 'Bump version';
 
