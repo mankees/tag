@@ -1,7 +1,7 @@
 {
     "name": "mankees-tag",
     "private": true,
-    "description": "A tagging mankee",
+    "description": "Simplifies tagging",
     "author": "Juho Vepsalainen <bebraw@gmail.com>",
     "version": "0.1.0",
 
