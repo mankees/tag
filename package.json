@@ -3,7 +3,7 @@
   "private": true,
   "description": "Tags and updates your package.json. Pass version as a parameter",
   "author": "Juho Vepsalainen <bebraw@gmail.com>",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "dependencies": {
     "git-wrapper": "0.1.1"
   }
