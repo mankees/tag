@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 var fs = require('fs');
 
 var sys = require('sys');
@@ -7,8 +6,9 @@ var exec = require('child_process').exec;
 var Git = require('git-wrapper');
 
 
-exports.help = 'Tags and updates your package.json. Pass version as a parameter'
-exports.execute = function(version, message) {
+module.exports = execute;
+
+function execute(version, message) {
     message = message || 'Bump version';
 
     if(!version) {
@@ -33,6 +33,7 @@ exports.execute = function(version, message) {
         });
     });
 };
+execute.help = 'Tags and updates your package.json. Pass version as a parameter'
 
 function bumpVersion(version) {
     var data = JSON.parse(fs.readFileSync('package.json'));
