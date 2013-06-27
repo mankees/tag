@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 var fs = require('fs');
 
-var sys = require('sys');
-var exec = require('child_process').exec;
 var Git = require('git-wrapper');
 
 
@@ -32,7 +30,7 @@ function execute(version, message) {
             console.log('Finished tagging');
         });
     });
-};
+}
 
 function bumpVersion(version) {
     var data = JSON.parse(fs.readFileSync('package.json'));
