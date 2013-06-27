@@ -33,7 +33,6 @@ function execute(version, message) {
         });
     });
 };
-execute.help = 'Tags and updates your package.json. Pass version as a parameter'
 
 function bumpVersion(version) {
     var data = JSON.parse(fs.readFileSync('package.json'));
