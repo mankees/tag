@@ -9,6 +9,10 @@
   "keywords": [
     "mankees"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mankees/tag.git"
+  },
   "licenses": [
     {
       "type": "MIT",
